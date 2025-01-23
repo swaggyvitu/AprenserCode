@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
 
+*{
+    margin: 0; padding: 0;
+}
+
 :root{
     --primary-color: #FED001;
 
@@ -15,18 +19,201 @@ p, a{
     font-size: 2rem;
 }
 
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2.7em;
+}
+
+nav a{
+    color: inherit;
+}
+
 .upper{
     text-transform: uppercase;
 }
 
+.wrapperContainer{
+    padding-top: 1px;
+}
+
 .wrapperContainer-dark{
     background-color: #252424;
+    color: white;
 }
 
 .wrapperContainer-light{
-    background-color: #E9E9E9;
+    background-color: #f1f1f1;
 }
 
 .wrapperContainer-dark2{
     background-color: #003464;
+    color: white;
+}
+
+.wrapperContainer-fixed{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    
+}
+
+.container{
+    max-width: 1276px;
+    margin: auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+    padding: 1rem 0rem;
+    
+}
+
+.header_nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+.header_nav ul{
+   display: flex;
+   gap: 1.6rem;
+   list-style-type: none;
+}
+
+.header_nav a{
+    text-decoration: none;
+    padding: .70em 1rem;
+    border: solid 2px;
+    border-radius: .50rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.header_nav a:hover{
+    background-color: #000000;
+}
+
+.wrapperContainer-hero{
+    background: linear-gradient(180deg, rgba(17,10,103,0) 0%, rgba(255,233,0,1) 100%);
+}
+
+.heroBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_title{
+    font-size: 5rem;
+    width: 70%;
+    margin-bottom: 6rem;
+}
+
+.btn{
+    color: black;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 2.3rem;
+    background-color: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.btn:hover{
+    background-color: #f3c702;
+}
+
+.cursos{
+    margin-top: 0rem;
+    text-align: center;
+    padding: 10rem 0rem;
+    
+}
+
+.curso_card{
+    border: 1px solid grey;
+    border-radius: 10px;
+    flex: 1;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.curso_card h3{
+    margin: 1rem 0rem 2rem 0rem;
+    font-size: 2.3rem;
+}
+
+.cursos_card_content{
+    padding: 1rem;
+    
+}
+
+.curso_card img{
+    display: block;
+    width: 100%;
+}
+
+.cursos_card_content p{
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+}
+
+#cursos h2{
+    margin-bottom:3rem;
+}
+
+.cursosContainer{
+    display: flex;
+    text-align: left;
+    margin-bottom: 10rem;
+    gap: 16px;
+
+}
+
+.escolaDisplay{
+    display: flex;
+    padding-top: 7rem;
+}
+
+.escola_content{
+    padding: 0rem 3rem;
+}
+
+.escola_content h2{
+    margin-top: 7rem;
+}
+
+.escola_content p{
+    margin-top: 4rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
+}
+
+.contatos_content{
+    padding: 7rem;
+}
+
+.contatos_title{
+    text-align: center;
+    padding: 5rem;
+}
+
+.contatos_content_text address{
+    text-align: right;
+}
+
+footer{
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 2rem ;
+}
+
+footer a{
+    color: var(--primary-color);
 }
